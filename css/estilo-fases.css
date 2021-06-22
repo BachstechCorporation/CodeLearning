@@ -1,0 +1,188 @@
+* {
+    font-family: 'DotGothic16', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#m2-body{
+    background-image: url('../img/2back-arcade.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/back-m1.jpg');
+    /* background-color: #b9a485; */
+}
+
+#body-m1{
+    /* padding: 5%;  */
+    border: 5px solid rgba(80, 26, 26, 0.3);
+    border-radius: 18px;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0,0.7);
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.grid-tela-fase{
+    padding: 2%;
+    /* background-color: #fff6e7; */
+    /* margin-top: 20vh;
+    margin-left: 5%; */
+/* margin-right: auto; */
+    /* position: absolute; */
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-auto-rows: minmax(auto, auto);
+    grid-gap: 5px;
+    /* width: 90%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0,0.5); */
+}
+
+.tela-m1{
+    background-image: linear-gradient(to top, #b6a687, #e4d6ba, #e4d6ba);
+}
+
+.tela-m2{
+    background-image: linear-gradient(to top, rgba(0, 6, 22, .6), #525ac5, #525ac5);
+}
+
+
+.conjunto-form{
+    /* max-width: 95vh; */
+    margin-left: 5%;
+}
+
+#formulario-div{
+    display: none;
+    align-items: center;
+    align-content: center;
+}
+
+.abrir-modal{
+    display: none;
+}
+
+.bloco{
+    top: -17%;
+    height: 120px;
+    position: relative;
+    display: none;
+    /*width: 90px;
+    /* left: 50px; */
+    /* background-color: black; */
+}
+
+/* MAPA JOGO */
+.console-jogo{
+    position: relative;
+    display: none;
+    background-image:  url('../img/mapa-1-medieval.jpg');
+    /* background-color: blue; */
+    /* width: 80vh; */
+}
+
+.console-jogo img{
+    /* background-image:  url('../img/mapa-1-medieval.jpg'); */
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.8);
+    height: 500px;
+}
+
+.qst1{
+    height: 220px;
+    width: max-content;
+}
+
+#itens-laco{
+    margin-left: 100px;
+}
+
+.label-fase1{
+    font-size: 11pt;
+    font-weight: 800;
+    color: rgb(34, 39, 58);
+}
+
+.label-fase1-m2{
+    color: #fff;
+}
+
+.pergunta-qst-m2{
+    font-weight: 500;
+    color: #fff;
+}
+
+.pergunta-qst-m1{
+    font-size: 12pt;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-bottom: 2vh;
+}
+
+/* estilização das opções */
+input[type="radio"]{
+    visibility:hidden;
+}
+
+label {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    border: 2px solid rgba(34, 39, 58,0.5);
+    width: 120px;
+    float: left;
+}
+
+input[type="radio"]+label{
+    margin-left: 10px;
+    position: relative;
+}
+
+input[type="radio"]:checked+label{
+    border: 3px solid #bdb096;
+}
+
+.img-form{
+    /* height: 80px; */
+    height: 4.6em;
+}
+
+.btn-iniciar{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+    border: 0;
+    background-color: #8f3333;
+    margin-left: 1vh;
+    font-size: 13pt;
+    width: 17vh;
+    height: 5vh;
+    color: rgb(194, 194, 194);
+    font-style: normal;
+    
+}
+
+.btn-iniciar:hover{
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.msg-cmnh-certo{
+    display: none;
+    position: relative;
+    padding: 3.5%;
+    background-color: #4e6648;
+    color: #fff;
+}
+
+.msg-cmnh-errado{
+    display: none;
+    position: relative;
+    padding: 3.5%;
+    background-color: #8f3333;
+    color: #fff;
+}
