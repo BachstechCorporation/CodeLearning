@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/personalizado.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <title>CodeLearning - Aprenda Jogando</title>
+</head>
+
+<body>
+  <section id="transicao">
+  <!-- primeiro background medieval -->
+  <section id="primeiroback">
+  
+    
+	<!--Navbar-->
+		<nav class="navbar fixed-top navbar-expand-lg " style='background-image: linear-gradient(to left, rgba(169, 210, 233, 0.9), rgba(139, 192, 223, 0.9), rgba(183, 210, 226, 0.9)); position: sticky;'>
+
+		<div class="container-fluid">
+			<button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarRightAlignExample"
+              aria-controls="navbarRightAlignExample"
+              aria-expanded="false"
+              aria-label="Toggle navigation" >
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+              <!-- Links Esquerda + logo -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><img src="img/LogoCodeLearning.png" height="60px" width="100px"/></a>
+                </li>
+              </ul>
+
+              <!-- BARRA DE PESQUISA -->
+              <!-- <div id="barra-pesquisa">
+                <form class="form-inline">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><img src="img/lupa.png" height="20px"> </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon1">
+                  </div>
+                </form>
+                </div>
+              </div> -->
+              <!-- BARRA DE PESQUISA -->
+
+              
+                <ul class="navbar-nav mr-auto ">
+                  <li class="nav-item active">
+                    <a class="nav-link active text-white" href="#">COMO JOGAR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">TUTORIAL</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#">COMUNIDADE</a>
+                  </li>
+                </ul>
+
+                  <!-- Área Direita -->
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="../pagDeCadastro/cadastroAluno.php">CADASTRAR-SE: ALUNO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="../pagDeCadastro/cadastroEscola.php">CADASTRAR-SE: ESCOLA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="../pagDeCadastro/insert/pagDeLogin/LoginAluno.php">ENTRAR: ALUNO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="../pagDeCadastro/insert/pagDeLogin/loginEscola.php">ENTRAR: ESCOLA</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="#">
+                        <img src="img/group-icon.png"/>SOBRE NÓS
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link  text-white" href="#">
+                        <img src="img/ajuda-icon.png"/>AJUDA
+                      </a>
+                    </li> -->
+                  </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar-->
+
+            <!--Carrossel-->
+            <div id="carouselExampleIndicators" class="carousel slide sombra" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <!--Primeira imagem-->
+              <div class="carousel-inner ">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 tamanho" src="img/carrosselteste.jpg" alt="Primeiro Slide">
+                </div>
+                <!--Primeira imagem-->
+                <!--Segunda imagem-->
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tamanho" src="img/arcade.png" alt="Terceiro Slide">
+                </div>
+                <!--Segunda imagem-->
+                <!--Terceira imagem-->
+                <div class="carousel-item ">
+                  <img class="d-block w-100 tamanho" src="img/future.png" alt="Terceiro Slide">
+                </div>
+                <!--Terceira imagem-->
+              </div> 
+              </div>
+
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+              </a>
+        
+          <!--Card 1-->
+          <div class="containerMedieval"> 
+          <div class="back1-card">
+              
+           <div id="containerCard1">
+              <h1 id="tituloCard1">REINO TEXUGUEIRO</h1> 
+              <div id="tracoCard1"></div> 
+            </div>
+
+            <div class="card-group">
+                <div class="card espacamento">
+                  <img class="card-img-top" src="img/mapa-1-medieval.jpeg" alt="Card image cap">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                  <a href="m1-fase-1.html"><input type="button" value="INICIAR" class="blockBttReino"></a>
+                </div>
+                <div class="card espacamento">
+                  <img class="card-img-top" src="img/mapa-2-medieval.jpeg" alt="Card image cap">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                  <input type="button" value="INICIAR" class="blockBttReino">
+                </div>
+                <div class="card espacamento">
+                  <img class="card-img-top" src="img/mapa-3-medieval.jpeg" alt="Card image cap">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                  <input type="button" value="INICIAR" class="blockBttReino">
+                </div>
+                <div class="card espacamento">
+                  <img class="card-img-top" src="img/mapa-4-medieval.jpeg" alt="Card image cap">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                  <input type="button" value="INICIAR" class="blockBttReino">
+                </div>
+              </div> <!-- fim card grupo -->
+          </div>    <!-- fim back1-card -->
+          </div>    <!-- fecha o back dos cards medival -->
+        </div>
+  </section> <!--fecha o 1 back medieval-->
+
+  <!-- segundo background arcade -->
+  <section id="segundoback">
+      <div class="back2-card">
+          <div class="card-group">
+            
+            <div class="card espacamento">
+              <img class="card-img-top" src="img/mapa-1-arcade.gif" alt="Card image cap">
+              <div class="carousel-caption d-none d-md-block">                
+              </div>
+              <input type="button" value="INICIAR" class="blockBttArcade">
+            </div>
+
+            <div class="card espacamento">
+              <img class="card-img-top esp" src="img/mapa-2-arcade.png" alt="Card image cap">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+              <input type="button" value="INICIAR" class="blockBttArcade">
+            </div>
+
+            <div class="card espacamento">
+              <img class="card-img-top esp" src="img/mapa-3-arcade.png" alt="Card image cap">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+                <input type="button" value="INICIAR" class="blockBttArcade">
+            </div>
+
+          <div class="descCard2">
+            <p class="tituloCard2"> NAVEGUE NO </p>
+            <p class="subTituloCard2"> ARCADE </p>
+
+            <input type="button" value="COMEÇAR" id="btnCard2">
+          </div>
+          </div>
+  <!--card 2-->
+      </div> <!--fecha segundo back dos cards arcade-->
+  </section> <!-- fecha o 2 back arcade -->
+
+    <!-- terceiro background futurista -->
+  <div id="terceiroback">
+        <div class="back3-card">
+
+          <div id="containerCard3">
+            <p id="tituloCard3"> EMBARQUE NO FUTURO </p>
+            <div id="tracoCard1"></div>
+          </div>
+
+            <div class="card-group">
+              <div class="card espacamento">
+              <!-- POSSÍVEL UTILIZAÇÃO - TEXTO 
+                <div class="carousel-caption d-none d-md-block ">      
+                <h3>AAAAAA</h3>   
+              </div> -->
+                <img class="card-img" src="img/mapa-1-futuro.gif" alt="Card image cap">
+                <input type="button" value="INICIAR" class="blockBttFuturo">   
+              </div>
+
+              <div class="card espacamento">
+                <img class="card-img-top esp" src="img/mapa-2-futuro.png" alt="Card image cap">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                  <input type="button" value="INICIAR" class="blockBttFuturo">
+              </div>
+
+              <div class="card espacamento">
+                <img class="card-img-top esp" src="img/mapa-3-futuro.png" alt="Card image cap">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                  <input type="button" value="INICIAR" class="blockBttFuturo">
+              </div>
+            </div>
+        </div> <!-- fecha o 2 back do card futurista-->
+  </div> <!-- fecha o 3 back futurista -->
+
+
+   <footer class="text-center text-white" style="background-color: black; margin-top: -5%;">
+    <div class="container p-4">
+      <section class="">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 mb-6 mb-md-0">
+            <h5 class="text-uppercase"> Fale Conosco</h5>
+            <div id="tracoQmSms"></div>
+  
+            <ul class="list-unstyled mb-0">
+              <li> 
+           <img src="img/email-icon.png"/> contatobachstech@gmail.com</i>
+              </li>
+              <li>
+                <img src="img/tel-icon.png"/> +55 4002 - 8922</i>
+              </li>
+              <li>
+          <img src="img/group-icon.png"/> 11 96314 - 2524</i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 col-md-6 mb-6 mb-md-0">
+              <h5 class="text-uppercase"> Quem Somos</h5>
+              <div id="tracoQmSms"></div>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <img src="img/youtube-icon.png"/> Bachstech Company</i>
+              </li>
+              <li>
+            <img src="img/twitter-icon.png"/> @Bachstech</i>
+              </li>
+              <li>
+                <img src="img/insta-icon.png"/> Bachstech
+              </li>
+              <li>
+                <img src="img/github-icon.png"/> Bachstech Company</i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      class="text-center p-3"
+      style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2021 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Bachstech</a>
+    </div>
+  </footer>
+</section>
+  </body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

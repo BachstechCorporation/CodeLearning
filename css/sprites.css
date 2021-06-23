@@ -1,0 +1,257 @@
+/* COMEÇO HEROI */
+.alvaroAnda{
+    /* position: relative;
+    
+    top: -17%; */
+
+    display: none;
+    position: absolute;
+    /* top: 60%;
+    left: 55%; */
+    transform: translate(-50%, -50%);
+    width: calc(412px / 6);
+    height: 90px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/alvaroAnada.png");
+    animation: animateAndar 1s steps(6) infinite;
+}
+@keyframes animateAndar {
+    
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 412px;
+    }
+}
+
+/* alvaro ataca */
+.alvaroAtaca{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(450px / 5);
+    height: 90px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/attack.png");
+    animation: animateAttack 1s steps(5) infinite;
+}
+@keyframes animateAttack {
+    
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: -420px;
+    }
+}
+/* FIM HEROI */
+
+/* COMEÇO INIMIGOS */
+/* COMPUTADOR */
+.computador{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(400px / 5);
+    height: 100px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/passin.png");
+    animation: animateComput 1s steps(5) infinite;
+}
+@keyframes animateComput {
+    
+    from{
+        background-position: 500;
+    }
+    to{
+        background-position: 430px;
+    }
+}
+
+/* CPU */
+.cpu{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(500px / 5);
+    height: 160px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/cpu.png");
+    animation: animateCPU 1s steps(5) infinite;
+}
+@keyframes animateCPU {
+    
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 600px;
+    }
+}
+
+/* GEGE */
+.gege{
+    display: none;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    width: calc(600px / 5);
+    height: 150px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/gege.png");
+    animation: animateGege 1s steps(5) infinite;
+}
+@keyframes animateGege {
+    
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 600px;
+    }
+}
+
+/* JELLY */
+.jelly{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(410px / 5);
+    height: 50px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/jelly.png");
+    animation: animateJelly 1s steps(5) infinite;
+}
+@keyframes animateJelly {
+    
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 450px;
+    }
+}
+
+/* MANDON */
+.mandon{
+    display: none;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    width: calc(420px / 5);
+    height: 100px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/mandon.png");
+    animation: animateMandon 1s steps(5) infinite;
+}
+@keyframes animateMandon {
+    
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 500px;
+    }
+}
+
+/* pizza do vaticano */
+.pizzaVaticano{
+    display: none;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    width: calc(500px / 5);
+    height: 100px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/pizzadovaticano.png");
+    animation: animateVaticano 1s steps(5) infinite;
+}
+@keyframes animateVaticano {
+    
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 500px;
+    }
+}
+/* robot */
+.robot{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(500px / 6);
+    height: 100px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/robot.png");
+    animation: animateRobot 1s steps(6) infinite;
+}
+@keyframes animateRobot {
+    
+    from{
+        background-position: 100;
+    }
+    to{
+        background-position: -470px;
+    }
+}
+
+/* ronaldinho soccer */
+.ronaldoSoccer{
+    display: none;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    width: calc(660px / 5);
+    height: 130px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/ronaldinhosoccer.png");
+    animation: animateRonaldo 1.0s steps(5) infinite;
+}
+@keyframes animateRonaldo {
+    
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 650px;
+    }
+}
+
+/* sabonete dove */
+.saboneteDove{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(300px / 5);
+    height: 80px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/sabonetedove.png");
+    animation: animateDove 1s steps(5) infinite;
+}
+@keyframes animateDove {
+    
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 300px;
+    }
+}
+/* FIM INIMIGOS */

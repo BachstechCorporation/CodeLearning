@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#barra-pesquisa {
+  margin-left: 50px;
+}
+
+.tamanho {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#primeiroback {
+  background-image: url('../img/fundoMedieval.jpg');
+  background-attachment: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #000;
+}
+
+#segundoback {
+  padding-bottom: 100px;
+  background-image: url('../img/fundoArcade.jpg');
+  background-attachment: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #000;
+}
+
+#terceiroback {
+  padding-bottom: 100px;
+  background-image: url('../img/futuroTeste.jpg');
+  background-attachment:initial;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #000;
+}
+
+#transicao {
+  background-color: black;
+}
+
+/* .transparencia {
+  background-color:rgba(0, 0, 0, .8);
+  width: 100%;
+} */
+
+.card-group {
+  position: relative;
+}
+
+.back1-card {
+  padding: 2%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #032f55;
+  background-image: linear-gradient(to bottom, #103758, #032f55, #000);
+  position: relative;
+  
+}
+.back2-card {
+  padding: 2%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-image: linear-gradient(to bottom, #2f1583, #10082b, #000);
+  background-color: #10082b;
+}
+
+.back3-card {
+  padding: 2%;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  background-image: linear-gradient(to top, #693081, #2f133b, rgb(0, 0, 0));
+}
+
+.espacamento {
+  margin: 15px;
+  background-color: #032f55;
+}
+
+#tracoQmSms {
+  margin-top: 15px;
+  margin-left: 31.3%;
+  margin-bottom: 25px;
+  width: 200px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+.tituloCard2, .subTituloCard2{
+  text-align: center;
+}
+
+#tituloCard1 {
+  color: #f0f8ff;
+  font-size: 5vh;
+  font-family: none;
+}
+
+.descCard2 {
+  padding: 3%;
+  color: aliceblue;
+}
+
+#containerCard1 #tituloCard1:after {
+  content: ' ';
+  position: absolute;
+  width: 35%;
+  border-top: 2px solid #f0f8ff;
+  margin-top: 1.8%;
+  margin-left: 1.4%;
+}
+
+#containerCard3 #tituloCard3:after {
+  content: ' ';
+  position: absolute;
+  width: 35%;
+  border-top: 2px solid #f0f8ff;
+  margin-top: 1.8%;
+  margin-left: 1.4%;
+}
+
+#tituloCard3 {
+  color: #f0f8ff;
+  font-size: 5vh;
+}
+
+.tituloCard2, .subTituloCard2{
+  text-align: center;
+}
+
+.descCard2 {
+  padding: 3%;
+  color: aliceblue;
+}
+
+.tituloCard2 {
+  font-size: 4vh;
+}
+
+.subTituloCard2 {
+  line-height: 4vh;
+  font-size: 8vh;
+}
+
+#btnCard2 {
+  margin-top: 25%;
+  width: 290px;
+  height: 50px;
+
+  color: aliceblue;
+  font-size: 25px;
+
+  background-color: #214546;
+  border-color: transparent;
+  box-shadow: -5px 8px 8px rgba(0, 0, 0, 0.8);
+}
+
+.blockBttArcade {
+  color: aliceblue;
+  background-color: #0c0517;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 2%;
+
+  border-color: rgb(68, 50, 228);
+  border-radius: 20px;
+  width: 250px;
+  margin-left: 13%;
+  box-shadow: -3px 1px 8px rgba(55, 37, 214, 0.8);
+
+}
+
+  
+.blockBttReino {
+  color: aliceblue;
+  background-color: #660000;
+  /* background-image: linear-gradient(to bottom, #660000, #660000, #000); */
+  padding: 2%;
+  width: 342px;
+  height: 100%;
+  border-color: transparent;
+
+}
+
+.blockBttFuturo {
+  color: aliceblue;
+  background-color: #15162a;
+  padding: 2%;
+  height: 100%;
+  width: 461px;
+  border-color: transparent;
+}

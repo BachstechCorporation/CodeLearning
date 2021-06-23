@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+
+    <style>
+        .alvaroAnda{
+    /* position: relative;
+    
+    top: -17%; */
+
+    /* display: none; */
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: calc(412px / 6);
+    height: 90px;
+    image-rendering: pixelated;
+    background: url("../img/sprites/alvaroAnada.png");
+    animation: animateAndar 1s steps(6) infinite;
+    }
+    @keyframes animateAndar {
+        
+        from{
+            background-position: 0;
+        }
+        to{
+            background-position: 412px;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div class="alvaroAnda">
+    </div>
+    
+</body>
+</html>

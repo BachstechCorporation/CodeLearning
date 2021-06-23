@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Lobster&family=Nova+Square&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo-fases.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/sprites.css">
+    <link rel="stylesheet" href="../css/popup-modal.css">
+    <link rel="stylesheet" href="../css/dialogos-laterais.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Focinho: Fase 3 - CodeLearning</title>
+</head>
+<body id="m2-body">
+
+    <section id="body-m1">
+        <header>
+            <nav id="nav-m2">
+                <!-- AJUSTAR O LUGAR DA IMAGEM PRA NÃO AFASTAR O CONTEUDO -->
+                <!-- <li>
+                    <a href="#"><img src="img/LogoCodeLearning.png" alt="Logo Codelearning" class="imgLogo"></a>
+                </li> -->
+    
+                <ul class="navbar-itens">
+                    <li><a href="#">Como Jogar</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#">Comunidade</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <div class="ajuda-li">
+                        <li><a href="#">Ajuda </a>
+                            <ul>    
+                                <li><a href="#" >Login </a></li>
+                                <li><a href="#" >Registrar </a></li>
+                                <li><a href="#" >Contato </a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    
+        <div id="missao-modal" class="popupmodal popup-modal-missao">
+            <div class="modal-missao modal-missao-m2">
+                <img src="../img/aviso2M2.png" alt="">
+                <div class="btns-missao">
+                    <button onclick="location.href='#abrirModal';" class="btn-missao">Aceitar</button>
+                    <a href="#retornar-pagina"><button class="btn-missao">Negar</button> </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="abrirModal" class="popupmodal popupmodalfs4">
+            <div class="grid-modal">
+                <img src="img/2mago.gif" alt="">
+                <div class="balao-dialogo balao-modal" style="height: 160px;">
+                    <h3>Ajude o mestre Rupert!</h2>
+                    <p>Olá, viajante! Estou meio perdido nesse castelo. Pode me dizer
+                        como posso chegar até o outro lado?
+                    </p>
+                    <form>
+                        <div class="caixa-pergunta">
+                            
+                            <p class="enunciado-modal">Com base na fase anterior, descreva para Rodolfo o caminho correto.</p>
+
+                            <p>Durante <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="L1M2F3"> vezes.</p> 
+
+                            <div class="laco-modal">
+                                <p>
+                                    Ande <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="A1M2F2"> vezes.
+                                    Siga para <input type="text" placeholder="Direção" class="cx-txt-modal" id="D1M2F2" pattern="[A-Za-z]+">.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="btns-modal">
+                            <!-- BOTOES ANTES DE CONFIRMAR  -->
+                            <input type="button" value="Confirmar" class="btn-modal btn-confi-modal" id="M2F3confirmarModal" onclick="validarFase1()">
+                            <a href="#retornar-pagina" class="fechar-modal"><input type="button" value="Pular" class="btn-modal btn-sair-modal" id="M2F3PularModal"></a>
+                        
+                            <!-- BOTOES APOS CONFIRMAR -->
+                            <a href="#retornar-pagina" class="fechar-modal"><input type="button" value="Prosseguir" class="btn-modal btn-confi-modal" id="F2continuarModal"></a>
+                            <input type="reset" value="Tentar novamente" 
+                                 class="btn-modal btn-sair-modal" id="F2tentarDnvModal" style="width: 160px;">
+                        </div>
+                    </form> 
+                     <!-- MENSAGENS DE FRACASSO OU SUCESSO -->
+                    <div id="msgFracasso">
+                        <p>Essa não! Parece que o mestre Rupert se perdeu com o caminho que você descreveu. Tente novamente!</p>
+                    </div>
+                    <div id="msgSucesso">
+                        <p>Parece que tudo ocorreu bem. Você o esperou por um tempo mas o mestre não retornou. Ele chegou em seu destino.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="sec1">
+            <!-- div para dividir grid em 3 colunas -->
+            <div class="grid-tela-fase tela-m2 top-no-notif">
+                <!-- baloes de dialogos laterais -->
+            <div class="mensagens-jogo">
+    
+                    <fieldset id="balao-1" class="balao-dialogo balao-dialogo-m2 balao-f1" style="width: 630px">
+                        <legend id="t1" class="img-dialog img-dialog-m2"><img src="../img/traveler_dialog.png"></legend>
+                        <h2 id="t1" class="titulo-balao-m2">Viajante:</h2>
+                        <p id="tx1" class="txt-balao-m2 typing">Não tenho muita certeza sobre o caminho que estou fazendo.</p>
+                        <button id="btn1" class="nes-btn nes-btn-m2">PRÓXIMO</button>
+                    </fieldset>
+                
+                    <fieldset id="balao-2" class="balao-dialogo balao-dialogo-m2 balao-f1" style="width: 800px">
+                        <legend id="t1" class="img-dialog img-dialog-m2"><img src="../img/traveler_dialog.png"></legend>
+                        <h2 id="t1" class="titulo-balao-m2">Viajante:</h2>
+                       <p id="tx2" class="txt-balao-m2 typing">Me sinto preso nesse lugar fechado, onde nem mesmo o vento pode ser guiado.</p>
+                       <button id="btn2" class="nes-btn nes-btn-m2">PRÓXIMO</button>
+                    </fieldset>
+                
+                    <fieldset id="balao-3" class="balao-dialogo balao-dialogo-m2 balao-f1" style="width: 660px">
+                        <legend id="t1" class="img-dialog img-dialog-m2"><img src="../img/traveler_dialog.png"></legend>
+                        <h2 id="t1" class="titulo-balao-m2">Viajante:</h2>
+                        <p id="tx3" class="txt-balao-m2 typing">Tudo bem, não há tempo para poesias, tampouco lamentações. </p>
+                        <button id="btn3" class="nes-btn nes-btn-m2">PRÓXIMO</button>
+                    </fieldset>
+                
+                    <fieldset id="balao-4" class="balao-dialogo balao-dialogo-m2 balao-f1" style="width: 680px">
+                        <legend id="t1" class="img-dialog img-dialog-m2"><img src="../img/traveler_dialog.png"></legend>
+                        <h2 id="t1" class="titulo-balao-m2">Viajante:</h2>
+                        <p id="tx4" class="txt-balao-m2 typing">Meu rei... eu prometo protegê-lo, tal como fez por minha mãe. </p>
+                        <button id="btn4" class="nes-btn nes-btn-m2">PRÓXIMO</button>
+                    </fieldset>
+                
+                    <fieldset id="balao-5" class="balao-dialogo balao-dialogo-m2 balao-f1" style="width: 600px">
+                        <h2 id="t1" class="titulo-balao-m2 missao-title">MISSÃO: SE GUIE!</h2>
+                        <p id="tx5" class="txt-balao-missao-m2">Não se perca dentro do castelo; tenha guardado todo o  caminho feito até aqui.
+                            Clique aqui para visualizar sua nova missão.</p>
+                        <a href="#missao-modal"><button id="btn5" class="nes-btn nes-btn-m2">EXIBIR</button></a>
+                    </fieldset>
+    
+            </div>
+        
+                <div class="formulario" id="formulario-div">
+                    <div class="abrir-modal">
+                        <a href="#missao-modal"> <img src="../img/missao-pendente-arcade.png" alt=""> </a>
+                    </div>
+                    <div id="msgCmnhCer" class="msg-cmnh-certo">
+                        <p>
+                            Ufa! Consegui chegar até a porta. Hora de continuar!
+                        </p>
+                    </div>
+                    <div id="msgCmnhErr" class="msg-cmnh-errado">
+                        <p>
+                            Essa não! Acho que errei o caminho. Melhor tentar novamente.
+                        </p>
+                    </div>
+                    <form>
+                        <!-- <div class="conjunto-form"> -->
+                        
+                            <div class="qst1">
+                                <p class="pergunta-qst pergunta-qst-m2 prgt-medieval">Durante...</p>
+                                <input type="radio" name="laco1" id="l1" class="input-fase1 laco5 lacoM2F3"/>
+                                <label for="l1" class="label-fase1-m2 prgt-medieval"><img src="../img/laco.png" alt="Direita" class="img-form"> 5 vezes</label>
+                                
+                                <input type="radio" name="laco1" id="l2" class="input-fase1"/>
+                                <label for="l2" class="label-fase1-m2 prgt-medieval"><img src="../img/laco.png" alt="Direita" class="img-form"> 10 vezes</label>
+                                
+                                <input type="radio" name="laco1" id="l3" class="input-fase1"/>
+                                <label for="l3" class="label-fase1-m2 prgt-medieval"><img src="../img/laco.png" alt="Direita" class="img-form"> 15 vezes</label>
+                            </div>
+                
+                            <div id="itens-laco">
+                                <div class="qst1">
+                                    <p class="pergunta-qst pergunta-qst-m2 prgt-medieval">Quantas vezes ele deve andar?</p>
+                                    <input type="radio" name="andar1" id="a1" class="input-fase1 andar3 andarM2F3"/>
+                                    <label for="a1" class="label-fase1-m2 prgt-medieval"><img src="../img/walk2.png" alt="Direita" class="img-form">Três (3)</label>
+                                    
+                                    <input type="radio" name="andar1" id="a2" class="input-fase1 andar4"/>
+                                    <label for="a2" class="label-fase1-m2 prgt-medieval"><img src="../img/walk2.png" alt="Direita" class="img-form">Quatro (4)</label>
+                                    
+                                    <input type="radio" name="andar1" id="a3" class="input-fase1 andar5"/>
+                                    <label for="a3" class="label-fase1-m2 prgt-medieval"><img src="../img/walk2.png" alt="Direita" class="img-form">Cinco (5)</label>
+                                </div>
+                            </div>
+                        
+                        <input type="reset" value="Resetar" class="btn-iniciar btn-tentarNov" id="resetar">
+                        <a href="#formulario-div"><input type="button" value="Iniciar" class="btn-iniciar exec" id="execM2F3"></a>
+                        <a href="m2-fase-4.html"><input type="button" value="Próxima" class="btn-iniciar proxFase" id="proxFase"></a>
+                    <!-- </div> -->
+                    </form>
+                </div>
+                    <!-- area do console -->
+                <div>
+                    <div class="console-jogo" id="consolejg-div">
+                        <img src="../img/mapa-3-arcade.png" alt="">
+                    </div>
+                    <div class="grupo-sprites-m2-f3">
+                        <div class="alvaroAnda"></div>
+                </div>
+                
+            </div>
+            <!-- fim div do grid -->
+        </div>
+    
+    </section>
+
+</body>
+</html>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/validacao-fases.js"></script>
+<script src="../js/validacao-modal.js"></script>
+<script src="../js/movimentaSprite.js"></script>
+
+<script>
+    jQuery('#btn1').click(function(){
+        $('#balao-2').show();
+        $('#btn1').hide();
+        $('#balao-1').hide();
+    });
+
+    jQuery('#btn2').click(function(){
+        $('#balao-3').show();
+        $('#btn2').hide();
+        $('#balao-2').hide();
+    });
+
+
+    jQuery('#btn3').click(function(){
+        $('#balao-4').show();
+        $('#btn3').hide();
+        $('#balao-3').hide();
+    });
+
+    jQuery('#btn4').click(function(){
+        $('#balao-5').show();
+        $('#btn4').hide();
+        $('#balao-4').hide();
+    });
+    
+    jQuery('#btn5').click(function(){
+        $('#balao-1').hide();
+        $('#balao-2').hide();
+        $('#balao-3').hide();
+        $('#balao-4').hide();
+        $('#balao-5').hide();
+        $('#balao-6').hide();
+
+        $('#formulario-div').show();
+        $('#consolejg-div').show();
+        $('.alvaroAnda').show();
+    });
+    
+</script>

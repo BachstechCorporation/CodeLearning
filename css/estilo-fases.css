@@ -4,17 +4,23 @@
     padding: 0;
 }
 
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/back-m1.jpg');
+    /* background-color: #b9a485; */
+}
+
 #m2-body{
     background-image: url('../img/2back-arcade.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-body{
+#m3-body{
+    background-image: url('../img/3back-futuro.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../img/back-m1.jpg');
-    /* background-color: #b9a485; */
 }
 
 #body-m1{
@@ -40,7 +46,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-auto-rows: minmax(auto, auto);
-    grid-gap: 5px;
+    grid-gap: 15px;
     /* width: 90%;
     box-shadow: 3px 3px 10px rgba(0, 0, 0,0.5); */
 }
@@ -53,6 +59,10 @@ body{
     background-image: linear-gradient(to top, rgba(0, 6, 22, .6), #525ac5, #525ac5);
 }
 
+.tela-m3{
+    
+    background-image: linear-gradient(to top, rgba(0, 6, 22, .6), #09134e, #09134e);
+}
 
 .conjunto-form{
     /* max-width: 95vh; */
@@ -60,28 +70,16 @@ body{
 }
 
 #formulario-div{
+    /* TIRAR DESSE */
     display: none;
     align-items: center;
     align-content: center;
 }
 
-.abrir-modal{
-    display: none;
-}
-
-.bloco{
-    top: -17%;
-    height: 120px;
-    position: relative;
-    display: none;
-    /*width: 90px;
-    /* left: 50px; */
-    /* background-color: black; */
-}
-
 /* MAPA JOGO */
 .console-jogo{
     position: relative;
+    /* TIRAR DESSE */
     display: none;
     background-image:  url('../img/mapa-1-medieval.jpg');
     /* background-color: blue; */
@@ -159,10 +157,10 @@ input[type="radio"]:checked+label{
     border: 0;
     background-color: #8f3333;
     margin-left: 1vh;
-    font-size: 13pt;
-    width: 17vh;
-    height: 5vh;
-    color: rgb(194, 194, 194);
+    font-size: 12pt;
+    width: 110px;
+    height: 35px;
+    color: rgb(255, 255, 255);
     font-style: normal;
     
 }
@@ -171,9 +169,24 @@ input[type="radio"]:checked+label{
     box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.9);
 }
 
+.btn-iniciarM3 {
+    background-color:rgb(120, 2, 255);
+    border: 0;
+    margin-left: 1vh;
+    font-size: 13pt;
+    width: 17vh;
+    height: 5vh;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+}
+
+.btn-iniciarM3:hover{
+        box-shadow:-1px 1px 3px rgba(58, 58, 58, 0.2);
+}
+
 .msg-cmnh-certo{
     display: none;
-    position: relative;
+    position:relative;
     padding: 3.5%;
     background-color: #4e6648;
     color: #fff;
@@ -185,4 +198,104 @@ input[type="radio"]:checked+label{
     padding: 3.5%;
     background-color: #8f3333;
     color: #fff;
+}
+
+/* POSICIONAMENTO VARIADO DAS SPRITES */
+
+@media (min-width: 1024px) {
+    .grupo-sprites-m1-f3{
+        margin-top: -290px;
+    }
+    .grupo-sprites-m1-f5{
+        margin-top: -230px;
+    }
+    .grupo-sprites-m2-f1{
+        margin-top: -230px;
+        margin-left: 90px;
+    }
+    .grupo-sprites-m2-f2{
+        margin-top: -180px;
+        margin-left: 90px;
+    }
+    .grupo-sprites-m2-f3{
+        margin-top: -420px;
+        margin-left: 260px;
+    }
+    .grupo-sprites-m2-f4{
+        margin-top: -370px;
+        margin-left: 90px;
+    }
+    .grupo-sprites-m3-f1{
+        margin-top: -250px;
+        margin-left: 180px;
+    }
+    .grupo-sprites-m3-f2{
+        margin-top: -340px;
+        margin-left: 180px;
+    }
+    .grupo-sprites-m3-f3{
+        margin-top: -80px;
+        margin-left: 120px;
+    }
+    .grupo-sprites-m3-f4{
+        margin-top: -80px;
+        margin-left: 120px;
+    }
+    .grupo-sprites-m3-f5{
+        margin-top: -250px;
+        margin-left: 100px;
+    }
+
+
+    /* MUNDO 3 */
+
+}
+
+@media (max-width: 1366px) {
+    .grupo-sprites-m1-f1{
+        margin-top: -250px;
+        margin-left: 50px;
+    }
+    .grupo-sprites-m1-f4{
+        margin-top: -230px;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 1440px) {
+    /* fase 1 e 2 mundo 1 */
+    .grupo-sprites-m1-f1{
+        margin-top: -230px;
+        margin-left: 50px;
+    }
+    /* fase 3 mundo 3 */
+    .grupo-sprites-m1-f3{
+        margin-top: -290px;
+        /* margin-right: 800px; */
+    }
+    .grupo-sprites-m1-f4{
+        margin-top: -230px;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 2560px) {
+    /* fase 1 e 2 mundo 1 */
+    .grupo-sprites-m1-f1{
+        margin-top: -230px;
+        margin-left: 50px;
+    }
+    /* fase 3 mundo 3 */
+    .grupo-sprites-m1-f3{
+        margin-top: -290px;
+        /* margin-right: 800px; */
+    }
+    .grupo-sprites-m1-f4{
+        margin-top: -230px;
+        margin-left: 90px;
+    }
+    .grupo-sprites-m1-f5{
+        margin-top: -230px;
+        margin-left: 270px;
+    }
 }

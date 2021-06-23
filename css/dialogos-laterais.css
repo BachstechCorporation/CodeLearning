@@ -2,14 +2,6 @@
     font-family: 'DotGothic16', sans-serif;
 }
 
-.img-dialog-m2 img{
-    box-shadow: inset 10px 0px 1px #56498f;
-}
-
-.img-dialog-m1 img{
-    box-shadow: inset 10px 0px 1px #b39c7f;
-}
-
 .img-dialog img {
     /* border-left: 4px solid #212529; */
     border: 4px solid #212529;
@@ -24,14 +16,16 @@
 }
 
 /* primeiro balão */
-#balao-1{
+#balao-1,#dialog-1{
     margin-top: 3vh;
-    /* display:none; */
+    display:block;
+    /* display: none; */
 }
 
 /* 2 ao 5 balao */
-#balao-2,#balao-3,#balao-4,#balao-5, #balao-6,#balao-7,#balao-8,#balao-9,#balao-10,#balao-11,
-#balao-12,#balao-13,#balao-14,#balao-15,#balao-16,#balao-17,#balao-18,#balao-19,#balao-20{
+#balao-2,#balao-3,#balao-4,#balao-5,#balao-6,#balao-7,#balao-8,#balao-9,#balao-10,#balao-11,
+#balao-12,#balao-13,#balao-14,#balao-15,#balao-16,#balao-17,#balao-18,#balao-19,#balao-20,#dialog-2,
+#dialog-3,#dialog-4,#dialog-5 {
     display:none;
 }
 
@@ -42,6 +36,31 @@
     width: 110px;
 }
 
+.nes-btn:hover{
+    font-size: 11pt;
+}
+
+/* botoes medieval */
+.nes-btn-m1{
+    background-color: #41331f;
+    color: blanchedalmond;
+}
+
+.nes-btn-m1::after{
+    box-shadow: inset -4px -4px #2f2414;
+}
+
+.nes-btn-m1:hover{
+    background-color: #41331f;
+    color: blanchedalmond;
+}
+
+.nes-btn-m1:hover::after{
+    box-shadow: inset -4px -4px #2f2414;
+}
+/* fim botoes medieval */
+
+/* botoes arcade */
 .nes-btn-m2{
     background-color: #943f9c;
 }
@@ -57,28 +76,27 @@
 .nes-btn-m2:hover::after{
     box-shadow: inset -4px -4px #713077;
 }
+/* fim botoes arcade */
 
-.nes-btn-m1{
-    background-color: #41331f;
+/* botoes futuro */
+.nes-btn-m3{
+    background-color: #303575;
     color: blanchedalmond;
 }
 
-.nes-btn-m1::after{
-    box-shadow: inset -4px -4px #2f2414;
+.nes-btn-m3::after{
+    box-shadow: inset -4px -4px #282c5e;
 }
 
-.nes-btn-m1:hover{
-    background-color: #41331f;
+.nes-btn-m3:hover{
+    background-color: #25295f;
     color: blanchedalmond;
 }
 
-.nes-btn:hover{
-    font-size: 11pt;
+.nes-btn-m3:hover::after{
+    box-shadow: inset -4px -4px #161941;
 }
-
-.nes-btn-m1:hover::after{
-    box-shadow: inset -4px -4px #2f2414;
-}
+/* fim botoes futuro */
 
 .missao-title{
     margin-top: 5%;
@@ -139,22 +157,20 @@
     }
 }
 
-/* .balao-dialogo-missao{
-    color: rgb(32, 32, 32);
-	background: #ed5565;
-    padding: 5%;
-	position: relative;
-    margin-left: 25px;
-} */
-
 .balao-dialogo-missao a {
     text-decoration: none;
 }
 
-.balao-dialogo-m2{
-	background-color: #59499e;
-    background-image: linear-gradient(to top, #59499e, rgba(255, 255, 255, 0.2), #59499e);
-    box-shadow: inset 10px 32px #56498f;
+.img-dialog-m1 img{
+    box-shadow: inset 10px 0px 1px #b39c7f;
+}
+
+.img-dialog-m2 img{
+    box-shadow: inset 10px 0px 1px #56498f;
+}
+
+.img-dialog-m3 img{
+    box-shadow: inset 10px 0px 1px #0e1a4d;
 }
 
 .balao-dialogo-m1{
@@ -163,15 +179,29 @@
     box-shadow: inset 10px 32px #b39c7f;
 }
 
+.balao-dialogo-m2{
+	background-color: #59499e;
+    background-image: linear-gradient(to top, #59499e, rgba(255, 255, 255, 0.2), #59499e);
+    box-shadow: inset 10px 32px #56498f;
+}
+
+.balao-dialogo-m3{
+	background-color: #212529;
+    background-image: linear-gradient(to top, #1a2a72, #1a2a72, #1a2a72);
+    box-shadow: inset 10px 32px #0e1a4d;
+}
+
 .balao-dialogo {
 	position: relative;
     height: 250px;
     width: 550px;
     padding: 4%;
 
-
     margin-left: 25px;
     margin-top: 3vh;
     /* sombra interna */
     border: 4px solid #212529;
 }
+/* .mensagens-jogo{
+    display: none;
+} */

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Lobster&family=Nova+Square&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo-fases.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sprites.css">
+    <link rel="stylesheet" href="css/popup-modal.css">
+    <link rel="stylesheet" href="css/dialogos-laterais.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reino Texugueiro: Fase 4 - CodeLearning</title>
+</head>
+<body>
+
+    <section id="body-m1">
+        <header>
+            <nav id="nav-m1">
+                   <!-- AJUSTAR O LUGAR DA IMAGEM PRA NÃO AFASTAR O CONTEUDO -->
+                    <!-- <li>
+                        <a href="#"><img src="img/LogoCodeLearning.png" alt="Logo Codelearning" class="imgLogo"></a>
+                    </li> -->
+
+                <ul class="navbar-itens">
+                    <li>
+                    </li>
+                    <li><a href="#">Como Jogar</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#">Comunidade</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <!-- <li><a href="#"><img src="img/ajuda-icon.png" alt="Ajuda" class="ajuda-icon ajuda-li"></a></li> -->
+                    <div class="ajuda-li">
+                        <li><a href="#">Ajuda </a>
+                            <ul>    
+                                <li><a href="#" >Login </a></li>
+                                <li><a href="#" >Registrar </a></li>
+                                <li><a href="#" >Contato </a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        
+        <div>
+            <div id="missao-modal" class="popupmodal popup-modal-missao">
+                <div class="modal-missao">
+                    <img src="img/quadro-aviso2.png" alt="">
+                    <div class="btns-missao">
+                        <a href="#abrirModal"><input type="button" value="Aceitar" class="btn-missao"></a>
+                        <a href="#retornar-pagina"><input type="button" value="Negar" class="btn-missao"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="abrirModal" class="popupmodal popupmodalfs4 ">
+                <div class="grid-modal">
+                    <img src="img/knight.gif" alt="">
+                    <div class="balao-f4 balao-dialogo balao-modal" style="height: 160px;">
+                        <h3>O cavaleiro Charles está tremendo!</h2>
+                        <p>Ei, você! Como conseguiu passar por todos aqueles monstros? 
+                            Você é muito corajoso! Por favor, me ensine sua técnica!
+                        </p>
+                        <form>
+                            <div class="caixa-pergunta">
+                                <p class="enunciado-modal">Escreva para Charles como ele deve passar pelos monstros.</p>
+                                <p>
+                                    Andar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="F4A1"> vezes.
+                                    Seguir para <input type="text"placeholder="Direção" class="cx-txt-modal" id="F4D1">
+                                </p>
+                                
+                                <p>
+                                    Andar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="F4A2"> vezes.
+                                    Atacar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal"  id="F4AT1"> vezes.
+                                </p>
+                                
+                                <p>
+                                    Seguir para <input type="text"placeholder="Direção" class="cx-txt-modal" id="F4D2">.
+                                    Andar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="F4A3"> vezes.
+                                </p>
+                                
+                                <p>
+                                    Atacar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="F4AT2"> vezes.
+                                    Seguir para <input type="text"placeholder="Direção" class="cx-txt-modal" id="F4D3">
+                                </p>
+                                
+                                <p>
+                                    Andar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="F4A4"> vezes.
+                                    Seguir para <input type="text"placeholder="Direção" class="cx-txt-modal" id="F4D4">
+                                </p>
+                                
+                                <p>
+                                    Andar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="F4A5"> vezes.
+                                    Seguir para <input type="text"placeholder="Direção" class="cx-txt-modal" id="F4D5">
+                                </p>
+                                
+                                <p>
+                                    Andar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="F4A6"> vezes.
+                                    Atacar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="F4AT3"> vezes.
+                                </p>
+
+                                <p>
+                                    Seguir para <input type="text"placeholder="Direção" class="cx-txt-modal" id="F4D6">
+                                    Andar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="F4A7"> vezes.
+                                </p>
+
+                                <p>
+                                    Seguir para <input type="text"placeholder="Direção" class="cx-txt-modal" id="F4D7">
+                                    Andar <input type="number" placeholder="Nº" class="cx-txt-modal cx-num-modal" id="F4A8"> vezes.
+                                </p>
+                            </div>
+                            <!-- BOTOES ANTES DE CONFIRMAR -->
+                            <div class="btns-modal btns-modal-fase4">
+                                <input type="button" value="Confirmar" class="btn-modal btn-confi-modal" id="F4confirmarModal">
+                                <a href="#sec1 class="fechar-modal"><input type="button" value="Pular" class="btn-modal btn-sair-modal" id="F4btnPularModal"></a>
+
+                            <!-- BOTOES APÓS CONFIRMAR -->
+                                <a href="#retornar-pagina" class="fechar-modal"><input type="button" value="Prosseguir" class="btn-modal btn-confi-modal" id="F2continuarModal"></a>
+                                <input type="reset" value="Tentar novamente" 
+                                    class="btn-modal btn-sair-modal" id="F2tentarDnvModal" style="width: 160px;">
+                            </div>
+                        </form>
+                        <div id="msgFracasso">
+                            <p>Ah, não! O cavaleiro Charles confiou na sua memória de elefante, porém acabou se perdendo ao seguir seus passos. Tentar de novo?</p>
+                        </div>
+                        <div id="msgSucesso">
+                            <p>Você o observou lutar com os monstros em um canto escondido. Graças a sua ajuda, Charles conseguiu passar pelas criaturas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec1" id="sec1">
+
+            <div class="grid-tela-fase tela-m1 top-notif">
+                <div class="mensagens-jogo">
+
+                        <fieldset id="balao-1" class="balao-dialogo balao-dialogo-m1" style="width: 720px">
+                            <legend id="t1" class="img-dialog img-dialog-m1"><img src="img/traveler_dialog.png"></legend>
+                            <h2 id="t1" class="titulo-balao">Viajante:</h2>
+                            <p id="tx1" class="txt-balao typing">O que foi isso? Parece que tudo o que ouvi
+                                era realmente verdade! 
+                            </p>
+                            <button id="btn1" class="nes-btn nes-btn-m1">PRÓXIMO</button>
+                        </fieldset>
+
+                        <fieldset id="balao-2" class="balao-dialogo balao-dialogo-m1">
+                            <legend id="t1" class="img-dialog img-dialog-m1"><img src="img/traveler_dialog.png"></legend>
+                            <h2 id="t1" class="titulo-balao">Viajante:</h2>
+                            <p id="tx2" class="txt-balao typing">Eram muitos monstros, que perigo!
+                            </p>
+                            <button id="btn2" class="nes-btn nes-btn-m1">PRÓXIMO</button>
+                        </fieldset>
+                    
+                        <fieldset id="balao-3" class="balao-dialogo balao-dialogo-m1"  style="width: 800px">
+                            <legend id="t1" class="img-dialog img-dialog-m1"><img src="img/cavaleiro_dialog.png"></legend>
+                            <h2 id="t1" class="titulo-balao">???:</h2>
+                            <p id="tx3" class="txt-balao typing">Me-meu senhor... me perdoe, acho que não vou conseguir
+                                chegar até você.
+                            </p>
+                            <button id="btn3" class="nes-btn nes-btn-m1">PRÓXIMO</button>
+                        </fieldset>
+                    
+                        <fieldset id="balao-4" class="balao-dialogo balao-dialogo-m1">
+                            <legend id="t1" class="img-dialog img-dialog-m1"><img src="img/traveler_dialog.png"></legend>
+                            <h2 id="t1" class="titulo-balao">Viajante:</h2>
+                            <p id="tx4" class="txt-balao typing">O que é isso dessa vez? Um cavaleiro?</p>
+                            <button id="btn4" class="nes-btn nes-btn-m1">PRÓXIMO</button>
+                        </fieldset>
+                    
+                        <fieldset id="balao-5" class="balao-dialogo balao-dialogo-m1" style="width: 650px">
+                            <legend id="t1" class="img-dialog img-dialog-m1"><img src="img/cavaleiro_dialog.png"></legend>
+                            <h2 id="t1" class="titulo-balao">???:</h2>
+                            <p id="tx5" class="txt-balao typing">Olá? Vo-você acabou de passar por todos aqueles monstros?</p>
+                            <button id="btn5" class="nes-btn nes-btn-m1">PRÓXIMO</button>
+                        </fieldset>
+                    
+                        <fieldset id="balao-6" class="balao-dialogo balao-dialogo-m1" style="width: 650px">
+                            <legend id="t1" class="img-dialog img-dialog-m1"><img src="img/cavaleiro_dialog.png"></legend>
+                            <h2 id="t1" class="titulo-balao">???:</h2>
+                            <p id="tx6" class="txt-balao typing">SAUDAÇÕES! Meu nome é Charles, por-por favor me ajude!</p>
+                            <button id="btn6" class="nes-btn nes-btn-m1">PRÓXIMO</button>
+                        </fieldset>
+                    
+                    
+                        <fieldset id="balao-7" class="balao-dialogo balao-dialogo-m1" style="width: 700px; height: 270px;">
+                            <h2 id="t1" class="titulo-balao missao-title">MISSÃO: AJUDA O CAVALEIRO CHARLES</h2>
+                            <p id="tx7" class="txt-balao-missao">O cavaleiro real parece estar enfrentando problemas
+                                para atravessar o quarto dos monstos. Seja um bom aventureiro e passe seus conhecimentos!</p>
+                            <a href="#missao-modal"><button id="btn7" class="nes-btn nes-btn-m1">PRÓXIMO</button></a>
+                        </fieldset>
+
+                </div>
+
+                <div class="formulario" id="formulario-div">
+                    <div class="abrir-modal">
+                        <a href="#missao-modal"> <img src="img/missao-pendente.png" alt=""> </a>
+                    </div>
+                    <form>
+                        <div id="msgCmnhCer" class="msg-cmnh-certo">
+                            <p>
+                                Ufa! Consegui chegar até a porta. Hora de continuar!
+                            </p>
+                        </div>
+                        <div id="msgCmnhErr" class="msg-cmnh-errado">
+                            <p>
+                                Essa não! Acho que errei o caminho. Melhor tentar novamente.
+                            </p>
+                        </div>
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Quantas vezes ele deve andar?</p>
+                                
+                                <input type="radio" name="andar1" id="a2" class="input-fase1 andar3"/>
+                                <label for="a2" class="label-fase1"><img src="img/walk2.png" alt="3" class="img-form">Três (3)</label>
+                                
+                                <input type="radio" name="andar1" id="a3" class="input-fase1 andar4"/>
+                                <label for="a3" class="label-fase1"><img src="img/walk2.png" alt="4" class="img-form">Quatro (4)</label>
+                                
+                                <input type="radio" name="andar1" id="a4" class="input-fase1 andar5"/>
+                                <label for="a4" class="label-fase1"><img src="img/walk2.png" alt="5" class="img-form">Cinco (5)</label>
+                        </div>
+
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Em qual direção ele deve seguir?</p>
+                                <input type="radio" name="direcao1" id="d1" class="input-fase1 direcaoDireita"/>
+                                <label for="d1" class="label-fase1"><img src="img/direction.png" alt="Direita" class="img-form">Direita</label>
+                                
+                                <input type="radio" name="direcao1" id="d2" class="input-fase1 direcaoEsquerda"/>
+                                <label for="d2" class="label-fase1"><img src="img/direction.png" alt="Esquerda" class="img-form">Esquerda</label>
+                                
+                                <input type="radio" name="direcao1" id="d3" class="input-fase1 direcaoFrente"/>
+                                <label for="d3" class="label-fase1"><img src="img/direction.png" alt="Frente" class="img-form">Frente</label>
+                        </div>
+
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Quantas vezes ele deve andar?</p>
+                                
+                                <input type="radio" name="andar2" id="a6" class="input-fase1 andar3"/>
+                                <label for="a6" class="label-fase1"><img src="img/walk2.png" alt="3" class="img-form">Três (3)</label>
+                                
+                                <input type="radio" name="andar2" id="a7" class="input-fase1 andar4"/>
+                                <label for="a7" class="label-fase1"><img src="img/walk2.png" alt="4" class="img-form">Quatro (4)</label>
+                                
+                                <input type="radio" name="andar2" id="a8" class="input-fase1 andar5"/>
+                                <label for="a8" class="label-fase1"><img src="img/walk2.png" alt="5" class="img-form">Cinco (5)</label>
+                        </div>
+                        
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Em qual direção ele deve seguir?</p>
+                                <input type="radio" name="direcao2" id="d5" class="input-fase1 direcaoDireita"/>
+                                <label for="d5" class="label-fase1"><img src="img/direction.png" alt="Direita" class="img-form">Direita</label>
+                                
+                                <input type="radio" name="direcao2" id="d6" class="input-fase1 direcaoEsquerda"/>
+                                <label for="d6" class="label-fase1"><img src="img/direction.png" alt="Esquerda" class="img-form">Esquerda</label>
+                                
+                                <input type="radio" name="direcao2" id="d7" class="input-fase1 direcaoFrente"/>
+                                <label for="d7" class="label-fase1"><img src="img/direction.png" alt="Frente" class="img-form">Frente</label>
+                        </div>
+                        
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Quantas vezes ele deve andar?</p>
+                                <input type="radio" name="andar3" id="a10" class="input-fase1 andar3"/>
+                                <label for="a10" class="label-fase1"><img src="img/walk2.png" alt="3" class="img-form">Três (3)</label>
+                                
+                                <input type="radio" name="andar3" id="a11" class="input-fase1 andar4"/>
+                                <label for="a11" class="label-fase1"><img src="img/walk2.png" alt="4" class="img-form">Quatro (4)</label>
+                                
+                                <input type="radio" name="andar3" id="a12" class="input-fase1 andar5"/>
+                                <label for="a12" class="label-fase1"><img src="img/walk2.png" alt="5" class="img-form">Cinco (5)</label>
+                        </div>
+
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Em qual direção ele deve seguir?</p>
+                                <input type="radio" name="direcao3" id="d9" class="input-fase1 direcaoDireita"/>
+                                <label for="d9" class="label-fase1"><img src="img/direction.png" alt="Direita" class="img-form">Direita</label>
+                                
+                                <input type="radio" name="direcao3" id="d10" class="input-fase1 direcaoEsquerda"/>
+                                <label for="d10" class="label-fase1"><img src="img/direction.png" alt="Esquerda" class="img-form">Esquerda</label>
+                                
+                                <input type="radio" name="direcao3" id="d11" class="input-fase1 direcaoFrente"/>
+                                <label for="d11" class="label-fase1"><img src="img/direction.png" alt="Frente" class="img-form">Frente</label>
+                        </div>
+                        
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Quantas vezes ele deve andar?</p>
+                                <input type="radio" name="andar4" id="a14" class="input-fase1 andar3"/>
+                                <label for="a14" class="label-fase1"><img src="img/walk2.png" alt="3" class="img-form">Três (3)</label>
+                                
+                                <input type="radio" name="andar4" id="a15" class="input-fase1 andar4"/>
+                                <label for="a15" class="label-fase1"><img src="img/walk2.png" alt="4" class="img-form">Quatro (4)</label>
+                                
+                                <input type="radio" name="andar4" id="a16" class="input-fase1 andar5"/>
+                                <label for="a16" class="label-fase1"><img src="img/walk2.png" alt="5" class="img-form">Cinco (5)</label>
+                        </div>
+
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Em qual direção ele deve seguir?</p>
+                                <input type="radio" name="direcao4" id="d13" class="input-fase1 direcaoDireita"/>
+                                <label for="d13" class="label-fase1"><img src="img/direction.png" alt="Direita" class="img-form">Direita</label>
+                                
+                                <input type="radio" name="direcao4" id="d14" class="input-fase1 direcaoEsquerda"/>
+                                <label for="d14" class="label-fase1"><img src="img/direction.png" alt="Esquerda" class="img-form">Esquerda</label>
+                                
+                                <input type="radio" name="direcao4" id="d15" class="input-fase1 direcaoFrente"/>
+                                <label for="d15" class="label-fase1"><img src="img/direction.png" alt="Frente" class="img-form">Frente</label>
+                        </div>
+                        
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Quantas vezes ele deve andar?</p>
+                                <input type="radio" name="andar5" id="a18" class="input-fase1 andar3"/>
+                                <label for="a18" class="label-fase1"><img src="img/walk2.png" alt="3" class="img-form">Três (3)</label>
+                                
+                                <input type="radio" name="andar5" id="a19" class="input-fase1 andar4"/>
+                                <label for="a19" class="label-fase1"><img src="img/walk2.png" alt="4" class="img-form">Quatro (4)</label>
+                                
+                                <input type="radio" name="andar5" id="a20" class="input-fase1 andar5"/>
+                                <label for="a20" class="label-fase1"><img src="img/walk2.png" alt="5" class="img-form">Cinco (5)</label>
+                        </div>
+
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Em qual direção ele deve seguir?</p>
+                                <input type="radio" name="direcao5" id="d17" class="input-fase1 direcaoDireita"/>
+                                <label for="d17" class="label-fase1"><img src="img/direction.png" alt="Direita" class="img-form">Direita</label>
+                                
+                                <input type="radio" name="direcao5" id="d18" class="input-fase1 direcaoEsquerda"/>
+                                <label for="d18" class="label-fase1"><img src="img/direction.png" alt="Esquerda" class="img-form">Esquerda</label>
+                                
+                                <input type="radio" name="direcao5" id="d19" class="input-fase1 direcaoFrente"/>
+                                <label for="d19" class="label-fase1"><img src="img/direction.png" alt="Frente" class="img-form">Frente</label>
+                        </div>
+                        
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Quantas vezes ele deve andar?</p>
+                                <input type="radio" name="andar6" id="a22" class="input-fase1 andar3"/>
+                                <label for="a22" class="label-fase1"><img src="img/walk2.png" alt="3" class="img-form">Três (3)</label>
+                                
+                                <input type="radio" name="andar6" id="a23" class="input-fase1 andar4"/>
+                                <label for="a23" class="label-fase1"><img src="img/walk2.png" alt="4" class="img-form">Quatro (4)</label>
+                                
+                                <input type="radio" name="andar6" id="a24" class="input-fase1 andar5"/>
+                                <label for="a24" class="label-fase1"><img src="img/walk2.png" alt="5" class="img-form">Cinco (5)</label>
+                        </div>
+
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Em qual direção ele deve seguir?</p>
+                                <input type="radio" name="direcao6" id="d21" class="input-fase1 direcaoDireita"/>
+                                <label for="d21" class="label-fase1"><img src="img/direction.png" alt="Direita" class="img-form">Direita</label>
+                                
+                                <input type="radio" name="direcao6" id="d22" class="input-fase1 direcaoEsquerda"/>
+                                <label for="d22" class="label-fase1"><img src="img/direction.png" alt="Esquerda" class="img-form">Esquerda</label>
+                                
+                                <input type="radio" name="direcao6" id="d23" class="input-fase1 direcaoFrente"/>
+                                <label for="d23" class="label-fase1"><img src="img/direction.png" alt="Frente" class="img-form">Frente</label>
+                        </div>
+                        
+                        <div class="qst1">
+                            <p class="pergunta-qst-m1 ">Quantas vezes ele deve andar?</p>
+                                <input type="radio" name="andar7" id="a26" class="input-fase1 andar3"/>
+                                <label for="a26" class="label-fase1"><img src="img/walk2.png" alt="3" class="img-form">Três (3)</label>
+                                
+                                <input type="radio" name="andar7" id="a27" class="input-fase1 andar4"/>
+                                <label for="a27" class="label-fase1"><img src="img/walk2.png" alt="4" class="img-form">Quatro (4)</label>
+                                
+                                <input type="radio" name="andar7" id="a28" class="input-fase1 andar5"/>
+                                <label for="a28" class="label-fase1"><img src="img/walk2.png" alt="5" class="img-form">Cinco (5)</label>
+                        </div>  
+                        
+                        <input type="reset" value="Resetar" class="btn-iniciar btn-tentarNov" id="resetar">
+                        <a href="#formulario-div"><input type="button" value="Iniciar" class="btn-iniciar exec" id="execM1F4"></a>
+                        <a href="m1-fase-5.html"><input type="button" value="Próxima" class="btn-iniciar"></a>
+                    </form>
+                </div>
+
+                <div>
+                    <div class="console-jogo" id="consolejg-div">
+                        <img src="img/mapa-4-medieval.jpeg" alt="">
+                    </div>
+                    <div class="grupo-sprites-m1-f4">
+                        <div class="alvaroAnda" style="margin-top: -215px; margin-left: 200px;"></div>
+                    </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/validacao-fases.js"></script>
+<script src="js/movimentaSprite.js"></script>
+<script src="js/validacao-modal.js"></script>
+
+<script>
+
+    jQuery('#btn1').click(function(){
+        $('#balao-2').show();
+        $('#btn1').hide();
+        $('#balao-1').hide();
+    });
+
+    jQuery('#btn2').click(function(){
+        $('#balao-3').show();
+        $('#btn2').hide();
+        $('#balao-2').hide();
+    });
+
+
+    jQuery('#btn3').click(function(){
+        $('#balao-4').show();
+        $('#btn3').hide();
+        $('#balao-3').hide();
+    });
+
+    jQuery('#btn4').click(function(){
+        $('#balao-5').show();
+        $('#btn4').hide();
+        $('#balao-4').hide();
+    });
+
+    jQuery('#btn5').click(function(){
+        $('#balao-6').show();
+        $('#btn4').hide();
+        $('#balao-5').hide();
+    });
+
+    jQuery('#btn6').click(function(){
+        $('#balao-7').show();
+        $('#btn4').hide();
+        $('#balao-6').hide();
+    });
+
+    jQuery('#btn7').click(function(){
+        $('#balao-1').hide();
+        $('#balao-2').hide();
+        $('#balao-3').hide();
+        $('#balao-4').hide();
+        $('#balao-5').hide();
+        $('#balao-6').hide();
+        $('#balao-7').hide();
+
+        $('#formulario-div').show();
+        $('#consolejg-div').show();
+        $('.alvaroanda').show();
+
+    }); 
+    
+</script>

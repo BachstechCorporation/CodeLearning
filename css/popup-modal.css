@@ -1,0 +1,536 @@
+
+/* .abrir-modal{
+    position: relative;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+    align-content: center;
+    margin: 0 0 2% 0;
+}
+
+.abrir-modal a {
+    text-decoration: none;
+    color: whitesmoke;
+} */
+
+#F2continuarModal, #F2tentarDnvModal{
+    display: none;
+}
+
+#msgFracasso, #msgSucesso{
+    text-align: justify;
+    display: none;
+    margin-top: 15px;
+    padding: 2%;
+	background-color: #e0cbad;
+    background-image: linear-gradient(to top, #bea484, rgba(226, 207, 181, 0.3), #bea484);
+}
+
+.btn-continuar{
+    background-color: #4e6648;
+    box-shadow: inset -4px -4px #3a4b36;
+    width: 120px;
+    margin-left: 55px;
+}
+
+.msg-modalSucesso{
+    margin-bottom: 10%;
+    font-weight: 600;
+    line-height: 10px;
+    text-align: center;
+    color: rgba(58, 25, 25, 0.8);
+}
+
+
+.msg-modalFracasso{
+    font-weight: 600;
+    margin-bottom: 15%;
+    line-height: 10px;
+    text-align: center;
+    color: rgba(58, 25, 25, 0.8);
+}
+
+.btn-modalFracasso {
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.btn-modalFracasso input {
+    /* background-color: #41331f;
+    box-shadow: inset -4px -4px #2f2414; */
+    border: none;
+    color: rgb(233, 233, 233);
+    padding: 7px;
+    font-size: 11pt;
+    font-weight: 100;
+}
+
+.btn-modalFracasso input:hover{
+    font-size: 10pt;
+}
+
+.btn-modalFracasso input:active{
+    border: 2px solid black;
+}
+
+#modalFracasso{
+    display: none;
+}
+
+#modalSucesso{
+    display: none;
+}
+
+.abrir-modal img {
+    display: block;
+    margin: 10px 0 10px 0;
+    height: 100px;
+}
+
+.abrir-modal img:hover {
+    box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.abrir-modal img:active {
+    box-shadow: -2px 2px 15px rgba(211, 211, 211, 0.9);
+    /* height: 99px; */
+}
+
+.balao-modal{
+    color: rgba(58, 25, 25, 0.8);
+    height: 220px;
+    font-weight: 800;
+}
+
+.caixa-pergunta{
+    margin-top: 90px;
+}
+
+.caixa-pergunta p{
+    font-weight: 800;
+}
+
+.popupmodal{
+    display: block;
+    line-height: 25px;
+    font-size: 13pt;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events:none;
+}
+
+.popupmodal:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popupmodal > div{
+    height: auto;
+    width: 50%;
+    position: relative;
+    /* margin: 10% auto; */
+    /* padding: 3% 2% 3% 2%; */
+    background: #fff;
+    border-radius: 1%;
+}
+
+/* MUDAR ALTURA DO MODAL ETC */
+.popupmodalfs3 > div{
+    height: auto;
+    width: 50%;
+    position: relative;
+    /* margin: 5% auto; */
+    /* padding: 3% 2% 3% 2%; */
+    background: #fff;
+    border-radius: 1%;
+}
+
+.popupmodalfs4 img{
+    height: 170px;
+}
+
+.popupmodalfs4 > div{
+    /* max-height: 655%; */
+    overflow-y: auto;
+    height: 550px;
+    width: 50%;
+    position: relative;
+    margin: 3% auto;
+    /* padding: 2% 2% 1% 2%; */
+    background-image: linear-gradient(to top, #e4d6ba, #e4d6ba, #b6a687);
+    box-shadow: 1px 1px 30px rgba(0, 0, 0,0.7);
+    border: 5px solid rgba(80, 26, 26, 0.3);
+    /* background: #fff; */
+    border-radius: 1%;
+}
+
+.popupmodalfs4>div::-webkit-scrollbar-thumb {
+    display: block;
+    background-color: rgba(153, 153, 153, 0.8);
+    border-radius: 20px;
+    border: 3px solid transparent; 
+}
+
+.popupmodalfs4>div::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.popupmodalfs4>div::-webkit-scrollbar-track {
+    background: rgba(201, 201, 201, 0.5);
+    border-radius: 20px;
+}
+
+/* POP UP MODAL ARCADE */
+.popupModalArcade > div{
+    /* max-height: 655%; */
+    overflow-y: auto;
+    height: 550px;
+    width: 50%;
+    position: relative;
+    margin: 3% auto;
+    /* padding: 2% 2% 1% 2%; */
+    background-color: #000;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0,0.7);
+    border: 5px solid rgba(26, 34, 80, 0.76);
+    /* background: #fff; */
+    border-radius: 1%;
+}
+
+.popupModalArcade .balao-arcade{
+    border: 2px solid rgba(26, 34, 80, 0.76);
+}
+
+.popupModalArcade h3{
+    color: #efe833;
+    font-weight: 600;
+}
+
+.popupModalArcade p{
+    color: #fff;
+    font-weight: 500;
+}
+
+.laco-modal{
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: 2px solid rgba(26, 34, 80, 0.76);
+}
+
+.popupModalArcade .btn-confi-modal{
+    color: #000;
+    background-image: linear-gradient(to top, orange, yellow, orange);
+}
+
+.popupModalArcade>div::-webkit-scrollbar-thumb {
+    display: block;
+    background-color: rgba(153, 153, 153, 0.8);
+    border-radius: 20px;
+    border: 3px solid transparent; 
+}
+
+.popupModalArcade>div::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.popupModalArcade>div::-webkit-scrollbar-track {
+    background: rgba(201, 201, 201, 0.5);
+    border-radius: 20px;
+}
+
+.popupModalArcade #msgFracasso{
+    background-color: #15085c;
+    background-image: linear-gradient(to top, #15085c, #15085c, #15085c);
+}
+
+/* POP UP MODAL MISSAO */
+.popup-modal-missao > div{
+    background-color: transparent;
+    margin-top: 1%;
+    /* justify-content: center; */
+
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 150vh; */
+    /* height: 60vh; */
+}
+
+div.modal-missao-m2 img {
+    height: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.popup-modal-missao img {
+    height: 520px;
+}
+
+.grid-modal{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: minmax(2px,auto);
+    grid-gap: 1px;
+}
+
+div.balao-f3 {
+    width: 700px;
+}
+
+div.balao-f4 {
+    width: 700px;
+}
+
+.balao-fase4{
+    margin-bottom: 3%;
+    color: rgb(255, 255, 255);
+	background: #ed5565;
+}
+
+.balao-fase4::after{
+	border-right-color: #ed5565;
+}
+
+.balao-fase5{
+    margin-left: 6%;
+    margin-bottom: 5%;
+    color: rgb(255, 255, 255);
+	background: #1895aa;
+}
+
+.balao-fase5::after{
+	border-right-color: #1895aa;
+}
+
+.img-modal-fase5{
+    margin-top: 12%;
+}
+
+.enunciado-modal{
+    font-weight: 500;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.cx-txt-modal{
+    margin-left: 1%;
+    font-size: 13pt;
+    margin-bottom: 2vh;
+    height: 35px;
+    width: 260px;
+}
+.cx-num-modal{
+    width: 60px;
+}
+
+.cx-txt-modal{
+    padding: 1.3%;
+}
+
+.cx-txt-modal:focus{
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    outline-color: #69523f;
+    border-color: transparent;
+}
+
+input.cx-txt-modal:hover{
+    border: 2px solid #69523f;
+}
+
+.btns-modal{
+    margin-top: 3%;
+    border-top: 1px solid rgb(194, 194, 194);
+    text-align: right;
+}
+
+.btn-modal{
+    margin: 4% 1% 0 0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    border-color: transparent;
+    font-size: 13pt;
+    /* font-weight: bold; */
+    color: whitesmoke;
+    height: 40px;
+    width: 120px;
+}
+
+.btns-missao-arcade button{
+    background-image: linear-gradient(to top, orange, yellow, orange);
+}
+
+.modal-arcade .btns-missao {
+    margin-left: 140px;
+}
+
+
+.btn-sair-modal{
+    background-color: rgb(156, 156, 156);
+    box-shadow: inset -4px -4px #757575;
+    border: none;
+}
+
+.btn-confi-modal{
+    background-color: #41331f;
+    box-shadow: inset -4px -4px #2f2414;
+    border: none;
+}
+
+.btn-modal:hover{
+    font-size: 12pt;
+}
+
+input.btn-modal:focus{
+    border-color: royalblue;
+}
+
+.btns-modal-fase4{
+    margin-bottom: 7%;
+}
+
+/* MODAL PARA AS MISSOES */
+.modal-missao img{
+    height: 520px;
+}
+
+.btns-missao{
+    position: relative;
+    margin-top: -120px;
+    /* margin-right: 350px; */
+    margin-left: 240px;
+    margin-right: auto;
+}
+
+.btns-missao input:hover{
+    box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.btn-missao{
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 14pt;
+    font-weight: 900;
+    color: rgb(77, 77, 77);
+    
+    position: relative;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+    background-color: rgba(185, 182, 139,0.5);
+    width: 160px;
+    height: 40px;
+}
+
+.btn-missaoM3 {
+    font-family:  sans-serif;
+    font-size: 14pt;
+    font-weight: 900;
+    color: #2f133b;
+    
+    position: relative;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+    background-color: rgb(161, 23, 242);
+    width: 160px;
+    height: 40px;
+}
+
+
+.popupModalFuturo > div{
+    overflow-y: auto;
+    height: 500px;
+    width: fit-content;
+    position: relative;
+    margin: 3% auto;
+    padding: 15px;
+    color: #fff;
+    background-color: #120458;
+    box-shadow: 1px 1px 30px #7a04eb;
+    border: 5px solid rgb(153, 23, 228);
+    border-radius: 1%;
+}
+
+.popupModalFuturo>div::-webkit-scrollbar-thumb{
+    display: block;
+    background-color: #120458;
+    border-radius: 20px;
+    border: 3px solid transparent;
+}
+
+.popupModalFuturo>div::-webkit-scrollbar{
+    width: 12px;
+    height: 12px;
+}
+
+.popupModalFuturo>div::-webkit-scrollbar-track{
+    background: #120458;
+    border-radius: 20px;
+}
+
+.popupModalFuturo h3{
+    font-weight: 600;
+    font-family: 'Karma Future', sans-serif;
+    color: #ff00a0;
+}
+
+.popupModalFuturo p{
+    font-weight: 500;
+    font-family: 'Karma Future', sans-serif;
+    color: #fff;
+}
+
+.popupModalFuturo .balao-futuro{
+    border: 3px solid #fe75fe;
+}
+
+.modal-lacoM3{
+    margin-left: 45px;
+}
+
+#msgFracassoM3, #msgSucessoM3{
+    text-align: justify;
+    display: none;
+    margin-top: 15px;
+    padding: 2%;
+	background-color: #7a04eb;
+    background-image: linear-gradient(to top, #7700a6, rgba(100, 6, 112, 0.3), #7700a6);
+}
+
+.btn-confi-modalM3{
+    background-color: rgb(161, 23, 242);
+    box-shadow: inset -4px -4px rgb(95, 12, 143);
+    border: none;
+}
+
+
+/* responsividade modal missao */
+
+/* @media (min-width: 1024px) {
+    .btns-missao{
+        margin-top: -120px;
+        margin-left: 38%;
+        margin-right: auto;
+    }
+}
+@media (min-width: 1440px) {
+    .btns-missao{
+        margin-top: -120px;
+        margin-left: 33%;
+        margin-right: auto;
+    }
+}
+@media (min-width: 1440px) {
+    .btns-missao{
+        margin-top: -120px;
+        margin-left: 33%;
+        margin-right: auto;
+    }
+} */
